@@ -77,7 +77,7 @@ public struct ConcentricOnboardingView<Content>: View, Animatable where Content:
     public var body: some View {
         mainContent
             .edgesIgnoringSafeArea(.vertical)
-            .onChange(of: currentIndex) { _ in
+            .onChange(value: currentIndex) { _ in
                 currentPageChanged()
             }
             .onAnimationCompleted(for: progress) {

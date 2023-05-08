@@ -11,6 +11,7 @@
 		5B42949F2772F3D200D1A973 /* ConcentricOnboarding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4294992772F3D200D1A973 /* ConcentricOnboarding.h */; };
 		5B4294A02772F3D200D1A973 /* AnimatableShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42949B2772F3D200D1A973 /* AnimatableShape.swift */; };
 		5B4294A12772F3D200D1A973 /* AnimationCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42949C2772F3D200D1A973 /* AnimationCompletion.swift */; };
+		F8F8A5622A09011100799B6A /* View+onChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F8A5612A09011100799B6A /* View+onChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5B42949C2772F3D200D1A973 /* AnimationCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationCompletion.swift; sourceTree = "<group>"; };
 		5B42949D2772F3D200D1A973 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7DF2D12316848800C30829 /* ConcentricOnboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConcentricOnboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F8A5612A09011100799B6A /* View+onChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+onChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		5B42949A2772F3D200D1A973 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F8F8A5602A0900F800799B6A /* Extension */,
 				5B42949B2772F3D200D1A973 /* AnimatableShape.swift */,
 				5B42949C2772F3D200D1A973 /* AnimationCompletion.swift */,
 			);
@@ -76,6 +79,14 @@
 				5B7DF2D12316848800C30829 /* ConcentricOnboarding.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F8F8A5602A0900F800799B6A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F8F8A5612A09011100799B6A /* View+onChange.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				5B42949E2772F3D200D1A973 /* ConcentricOnboardingView.swift in Sources */,
 				5B4294A02772F3D200D1A973 /* AnimatableShape.swift in Sources */,
 				5B4294A12772F3D200D1A973 /* AnimationCompletion.swift in Sources */,
+				F8F8A5622A09011100799B6A /* View+onChange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +310,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/ConcentricOnboarding/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +336,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/ConcentricOnboarding/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
