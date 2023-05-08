@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-extension View {
+public extension View {
     @ViewBuilder func onChange<T: Equatable>(value: T, onChange: @escaping (T) -> Void) -> some View {
         if #available(iOS 14.0, *) {
             self.onChange(of: value, perform: onChange)
